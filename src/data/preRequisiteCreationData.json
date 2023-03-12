@@ -1,0 +1,10 @@
+{
+  "preRequisites":{
+    "TST859":{
+      "rolePermissions": "Ultrasound"
+    },
+    "TST866":{
+      "rolePermissions": "Not My Patient"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "patientSummaryPage": {
+    "patientAssessments": {
+      "moduleNavigator": "//div[contains(@class,'module-navigator-items')]//div",
+      "colorThresholdsScale":"//div[contains(@class,'data-set-body')]//div[contains(@class,'data-set-cell content-cell score-cell')]//div",
+      "firstColorThresholdsScale":"(//div[contains(@class,'data-set-body')]//div[contains(@class,'data-set-cell content-cell score-cell')]//div)[1]",
+      "datesEvent": "//div[contains(@class,'data-set-body')]//div[contains(@class,'data-set-row')]//div[contains(@class,'description')]",
+      "dateFilterValue": "//div[contains(@class,'data-set-header')]//div[contains(@class,'sort-down')]//div[contains(@class,'parameters-container')]//div[contains(@class,'container-complication')]//div[2]",
+      "doubleBarrelSelectedValue": "//div[contains(@id,'appended-elements')]//div[contains(@class,'spinner-cells')]/div[2]",
+      "popUpHeader": "//div[@id='appended-elements']//div[contains(@class,'header-title')]",
+      "filterDate": "//div[contains(@class,'lozenge active') and contains(text(),' - ')]",
+      "allDates": "//div[contains(@class,'date-cell')]",
+      "currentDateAndTimeButton": "//div[contains(@class,'select-current-date-time')]",
+      "allRecords": "//div[contains(@class,'data-set-body')]//div[contains(@class,'data-set-row')]",
+      "noRecords": "//div[contains(@class,'data-set-body')]//div[contains(@class,'noresults')]",
+      "popUpWarning": "//div[@id='appended-elements']//div[contains(@class,'information-text warning')]/div",
+      "warning": "//div[contains(@class,'information-text warning')]",
+      "popUpNHSNumber": "//div[@id='appended-elements']//div[contains(@class,'patient-identifier')]/span[2]",
+      "reviewDueTime": "//div[contains(text(),'Review Due')]/../following-sibling::*//span|//div[contains(text(),'Review Due')]/../following-sibling::*//div",
+      "recordedOn": "//div[contains(text(),'Recorded On')]/../following-sibling::*//span|//div[contains(text(),'Recorded On')]/../following-sibling::*//div",
+      "firstValueOverAll": "//div[contains(@class,'data-set-body')]//div[contains(@class,'data-set-row')][1]//div[contains(@class,'score-cell')]",
+      "numberOfRecords": "//div[@class='data-set-footer']//div[@class='data-set-cell']",
+      "headersH1":"//h1|//div[@class='header-title']",
+      "labelAssessments": "//div[text()='Vitals']/ancestor::div[contains(@class,'header-seperator-cell')]/following-sibling::div//div[contains(@class,'container-column')][1]",
+      "tableHeader": "//div[contains(@class,'data-set-header')]//div[contains(@class,'label') and contains(@class,'container-text') ]"
+    }
+  },
+  "clinicalNoting" : {
+    "activeProgress" : "//*[@id='appended-elements']//div[@class='step active']//span",
+    "patientNotesContainer": "//*[@id='notes-container']",
+    "designationListXpath" : "//*[@id='appended-elements']//div[contains(@class,'container-item container-text standard')]"
+  },
+  "thirdPartySystems": {
+    "yhcr": {
+      "resourceWarning": "//div[@class='container-column'][contains(.,'Resource Warning')]/following-sibling::div//div[contains(@class,'collection')]",
+      "resourceWarningPopUp": "//div[@id='appended-elements']//div[contains(@class,'collection')]",
+      "resourceWarningPopUpValues": "//div[@id='appended-elements']//div[contains(@class,'container-text --red')]"
+
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "globalIndicator": "KTM-Indicator",
+  "wardPatientSearch": {
+    "ward": "Amethyst Ward",
+    "name": "BLACK, Charles Lisa",
+    "forename": "Charles Lisa",
+    "born": "10-Jun-1950 (72y)",
+    "nhsNumber": "442 858 0851",
+    "nhsNumber1": "4428580851",
+    "clinician": "John, L",
+    "specialty": "General Medicine",
+    "admitted": "23-Sep-2021 07:26",
+    "surname": "Black",
+    "gender": "Male",
+    "hospitalNumber": "Not Known",
+    "email": "Not Known",
+    "mobileNumber": "Not Known",
+    "source": "PAS",
+    "admittingClinician": "Karmani, J",
+    "admittingSpecialty": "General Medicine",
+    "admissionDataAndTime": "23-Sep-2021 07:26",
+    "generalPractitioner": "Not Known",
+    "generalPractitionerPractice": "Not Known",
+    "generalPractitionerAddress": "Not Known",
+    "generalPractitionerAddress2": "Not Known",
+    "generalPractitionerTelephone": "Not Known"
+  },
+  "organisation": {
+    "trusts": {
+      "name": "BMI Healthcare",
+      "type": "Private",
+      "telephone": "0808 1010337",
+      "postcode": "SE1 8ND",
+      "regionCode": "Q71",
+      "nationCode": "NT4",
+      "districtCode": "NT4",
+      "email": "Not Known",
+      "mobile": "Not Known",
+      "alias": "BMI"
+    },
+    "sites": {
+      "name": "Abbey Medical Practice",
+      "email": "Not Known",
+      "mobile": "Not Known",
+      "type": "GP Practice",
+      "telephone": "Not Known",
+      "regionCode": "Lincolnshire West",
+      "nationCode": "C83051",
+      "clinician": "Cameron-Smith, Eilidh",
+      "address": "95 Monks Road",
+      "postcode": "SE1 8ND",
+      "trust":"BMI Healthcare"
+    },
+    "locations": {
+      "name": "\"ORAL MINOR OPS",
+      "type": "Theatres",
+      "manager": "Amanda Davidson",
+      "nationCode": "SMOPS",
+      "site": "Abbey Medical Practice",
+      "site1": "Abbey Medical Practice ",
+      "postcode": "SE1 8ND",
+      "address": "SE1 8ND",
+      "email": "Not Known",
+      "mobile": "Not Known",
+      "telephone": "Not Known"
+    }
+  }
+}

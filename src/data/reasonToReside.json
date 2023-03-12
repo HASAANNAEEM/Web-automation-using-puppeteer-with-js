@@ -1,0 +1,83 @@
+{
+
+  "patientIdentifiers": {
+
+    "patient1": {
+
+      "patientID": "6498936762",
+
+      "demographicsBar": {
+        "headerNHS": "649 893 6762",
+        "headerDOB": "17-Jan-1948 (74y)",
+        "headerGender": "Female"
+      },
+
+      "patientDischarge": {
+        "spellNumber": "IP82235659",
+        "admittedOn": "24-Sep-2021 02:00",
+        "dischargedOn": "Not Discharged",
+        "admissionStatus": "Not Known"
+      }
+    },
+
+    "patient2": {
+
+      "patientID": "4209145947",
+
+      "demographicsBar": {
+        "headerNHS": "420 914 5947",
+        "headerDOB": "02-Nov-1965 (57y)",
+        "headerGender": "Female"
+      },
+
+      "patientDischarge": {
+        "spellNumber": "IP82237615",
+        "admittedOn": "30-Sep-2021 14:29",
+        "dischargedOn": "Not Discharged",
+        "admissionStatus": "Ward B4"
+      }
+    },
+
+    "patient3": {
+
+      "patientID": "4486801962",
+
+      "patientDischarge": {
+        "spellNumber": "IP82237062"
+      }
+    }
+  },
+
+  "dateParams": {
+
+    "date1": {
+      "day": "13"
+    }
+  },
+
+  "action&Responsibility": {
+
+    "value1": {
+      "value": "action & responsibility TST-1244"
+    }
+  },
+
+  "operationalNotes": {
+
+    "value1": {
+      "value": "operational notes tst-1244"
+    }
+  },
+
+  "meatballOptions": {
+
+    "meatball1": {
+      "value": "INGRAHM, Pat Patrick"
+    },
+
+    "meatball2": {
+      "value": "INGRAHM, Pat Patrick"
+    }
+  }
+
+}

@@ -1,0 +1,10 @@
+{
+  "xpath": {
+    "userStatus": "//span[contains(@class,'system-bar-status')]",
+    "userName" : "//div[contains(@class,'profile-image')]/..//following-sibling::div//div[contains(@class,'container-text standard')]",
+    "role": "//span[contains(@class,'label')][translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')='ROLE']//following-sibling::span",
+    "site": "//span[contains(@class,'label')][translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')='SITE']//following-sibling::span",
+    "changeProfile": "//div[@id='appended-elements']//div[translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')='CHANGE PROFILE']",
+    "changeSite": "//div[@id='appended-elements']//div[translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')='CHANGE SITE']"
+  }
+}

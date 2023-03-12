@@ -1,0 +1,45 @@
+{
+  "patientIdentifier": {
+    "xpath": {
+      "pat_identifier_search_input": "//*[@id='patient-identifier-search-input']//input",
+      "genderValue": "(//div[contains(@class,'table-body')]/div/div[1])[1]|(//div[contains(@class,'data-set-body')]/div/div[1])[1]",
+      "year": "//div[contains(@class,'date-time')]//div[contains(@class,'inline-selectors')]/div[2]",
+      "month": "//div[contains(@class,'date-time')]//div[contains(@class,'inline-selectors')]/div[1]",
+      "listOfYears": "//div[contains(@class,'list-option')]//span",
+      "nothingFound": "//div[@class='table-body']//div[contains(@class,'information-title-text')]|//div[contains(@class,'information-title-text')]",
+      "informationDescriptionText": "//div[contains(@class,'information-description-text')]",
+      "NothingHere": "//div[contains(@id,'appended-elements')]//div[contains(@class,'information-title-text')]",
+      "popUpDescriptionText": "//div[contains(@id,'appended-elements')]//div[contains(@class,'information-description-text')]",
+      "firstPatientName" : "(//div[@class='table-body']//div[contains(@class,'table-cell')])[2]",
+      "firstPatientAgeDOB" : "(//div[@class='table-body']//div[contains(@class,'table-cell')])[3]",
+      "firstPatientNHSNumber" : "(//div[@class='table-body']//div[contains(@class,'table-cell')])[4]",
+      "demoGraphicsGenderColor" : "//div[contains(@class,'demographics-bar-component')]",
+      "caseEvents" : "//div[contains(@class,'component-repeat')]//div[contains(@class,'text standard')]",
+      "demoGraphicsDisplayName" : "//div[contains(@class,'demographics-bar-component')]//div[contains(@class,'display-name')]",
+      "demoGraphicsDOB" : "//div[contains(@class,'demographics-bar-component')]//div[text()='Born ']/span",
+      "demoGraphicsGender" : "//div[contains(@class,'demographics-bar-component')]//div[text()='Gender ']/span",
+      "demoGraphicsNHSNo" : "//div[contains(@class,'demographics-bar-component')]//span[contains(text(),'NHS')]//following-sibling::span",
+      "listOfValues": "//div[contains(@class,'body')]//div[contains(@class,'cell')]",
+      "demoGraphicsDOBAndDate": "//div[contains(@class,'demographics-bar-component')]//div[2]",
+      "demoGraphicsNHS": "//div[contains(@class,'demographics-bar-component')]//div[@class='patient-identifier']",
+      "demoGraphicsGenderColorInPopup" : "//*[@id='appended-elements']//div[contains(@class,'demographics-bar-component')]",
+      "demoGraphicsDisplayNameInPopup" : "//*[@id='appended-elements']//div[contains(@class,'demographics-bar-component')]//div[@class='display-name']",
+      "demoGraphicsDOBInPopup" : "//*[@id='appended-elements']//div[contains(@class,'demographics-bar-component')]//div[text()='Born ']/span",
+      "demoGraphicsGenderInPopup" : "//*[@id='appended-elements']//div[contains(@class,'demographics-bar-component')]//div[text()='Gender ']/span",
+      "demoGraphicsNHSNoInPopup" : "//*[@id='appended-elements']//div[contains(@class,'demographics-bar-component')]//span[contains(text(),'NHS')]//following-sibling::span"
+    }
+  },
+  "clinicalRecordSettings": {
+    "xpath": {
+      "categoryListName": "//div[contains(@class,'data-set-body')]/div/div[1]",
+      "ReviewComments" : "(//div[contains(@class,'container-item container-text standard')])[1]"
+    }
+  },
+
+  "CaseParameter": {
+    "xpath": {
+      "Site": "//*[@class='container-item container-complication lozenge']/div[contains(text(),'Sites')]",
+      "Assignee" : "//*[@class='container-item container-complication lozenge']/div[contains(text(),'Assignees')]"
+    }
+  }
+}

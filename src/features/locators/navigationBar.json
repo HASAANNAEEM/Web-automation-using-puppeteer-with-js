@@ -1,0 +1,16 @@
+{
+  "xpath": {
+    "navBar_Header": "//div[contains(@class,'module-section-top') or contains(@class,'header-container')]//div[contains(@class,'header-title')]",
+    "modules_Header": "//div[contains(@class,'modules-container')]//div[contains(@class,'header-title')]",
+    "navBar_MainMenu" : "//div[contains(@class,'menu-bar-container-icon burger')]",
+    "navBar_Profile" : "//div[contains(@class,'menu-bar-container-icon profile')]",
+    "announcementTick": "//div[contains(text(),'System Announcement')]//following-sibling::div[contains(@class,'navigation-check')]",
+    "eventListTable" : "//div[contains(@class,'panel-fixed')][1]//div[contains(@class,'information-title-text')]",
+    "eventReportTable" : "//div[contains(@class,'panel-fixed')][2]//div[contains(@class,'information-title-text')]",
+    "informationTitleText": "//div[contains(@class,'information-title-text')]",
+    "tableHeaderCells": "//div[contains(@class,'table-header-cell')]",
+    "tableCells": "//div[contains(@class,'table-body')]//div[contains(@class,'table-cell')][1]",
+    "eventReportPackageName": "(//div[contains(@id,'page')]//div[contains(@class,'group')][1]//div[contains(@class,'property-label')])[1]",
+    "eventReportDocumentNames": "//div[contains(@id,'page')]//div[contains(@class,'segment')]//div[contains(@class,'property-title')]//div[contains(@class,'property-label')]"
+  }
+}

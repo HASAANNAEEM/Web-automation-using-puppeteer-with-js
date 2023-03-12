@@ -1,0 +1,71 @@
+{
+  "patientIdentifiers": {
+
+    "patient1": {
+      "patientID": "0000000000"
+    }
+  },
+
+  "subCategories": {
+
+    "subCategory1": {
+      "subCategoryName": "subCategory",
+      "subCategoryUpdatedName": "subCategoryTST-1305"
+    }
+  },
+
+  "categories": {
+
+    "category1": {
+      "categoryName": "KTM 3"
+    },
+
+    "category2": {
+      "categoryName": "Category",
+      "categoryUpdatedName": "CategoryTST-1305"
+    }
+
+  },
+
+  "names": {
+
+    "name1": {
+      "nameValue": "NameTesting",
+      "nameValueUpdated": "NameTST-1305"
+    }
+  },
+
+  "codes": {
+
+    "code1": {
+      "codeValue": "CodeTST-1305"
+    }
+  },
+
+  "descriptions": {
+
+    "description1": {
+      "descriptionValue": "DescriptionTST-1305"
+    }
+  },
+
+  "uploadedFiles": {
+
+    "file1": {
+      "fileName": "Screenshot 2022-09-08 121849.png"
+    }
+  },
+
+  "uploadedDocumentList": {
+
+    "document1": {
+      "documentCode": "CodeTST-1305",
+      "documentName": "NameTST-1305",
+      "documentType": "png",
+      "documentCategory": "KTM 3",
+      "documentSensitive": "No",
+      "documentSpeciality": "Accident & Emergency",
+      "documentSubCategory": "subCategoryTST-1305"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "name": "nhs-nlg-report",
+  "version": "1.0.0",
+  "description": "Puppeteer and Cucumber Boilerplate by Kualitatem",
+  "type": "parallel",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/register": "^7.16.9",
+    "@cucumber/cucumber": "^7.3.2",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
+    "chai": "^4.3.4",
+    "cucumber-html-reporter": "^5.5.0",
+    "fs-extra": "^10.0.0",
+    "imap-simple": "^5.1.0",
+    "jquery-csv": "^1.0.21",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.5.1",
+    "puppeteer-core": "^13.0.1",
+    "edge-paths": "^2.2.1"
+  },
+  "scripts": {
+    "qa": "node --experimental-json-modules src/utilities/helper/environmentSetup.mjs qa",
+    "dev": "node --experimental-json-modules src/utilities/helper/environmentSetup.mjs dev",
+    "prep": "node --experimental-json-modules src/utilities/helper/environmentSetup.mjs prep",
+    "demo": "node --experimental-json-modules src/utilities/helper/environmentSetup.mjs demo",
+
+    "cucumber": "cucumber-js  ./src/features/ --require-module @babel/register -f json:./src/report/json/cucumber-report.json --publish-quiet -f @cucumber/pretty-formatter",
+    "cucumber-tag": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @TST-1221 --require-module @babel/register -f json:./src/report/json/cucumber-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerun.txt",
+
+    "multi": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags \"@TST-934 or @TST-893 or @TST-637 or @TST-639 or @TST-640  or @TST-641 or @TST-657 or @TST-659 or @TST-660 or @TST-661 or @TST-668\" --require-module @babel/register -f json:./src/report/json/cucumber-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerun.txt",
+    "multi-tag": "run-s -c i clear multi report",
+
+    "parallel": "node node_modules/@cucumber/cucumber/bin/cucumber-js --parallel 10 ./src/features/ --tags \"(not @informationScreens) and @e2e\" --require-module @babel/register -f json:./src/report/json/cucumber-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerun.txt",
+    "parallel-tag": "run-s -c i clear parallel report",
+
+    "report": "node ./src/utilities/report.mjs",
+    "clear": "node src/utilities/clearDirectory.mjs",
+
+    "test": "run-s -c i cucumber report",
+    "test-tag": "run-s -c i clear cucumber-tag report",
+
+    "webVCore-smoke": "node node_modules/@cucumber/cucumber/bin/cucumber-js --parallel 11 ./src/features/ --tags @webVCore --require-module @babel/register -f json:./src/report/json/webVCore-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunwebVCore.txt",
+    "webVCore-rerun-smoke": "node node_modules/@cucumber/cucumber/bin/cucumber-js --parallel 11 ./src/report/rerun/@rerunwebVCore.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/webVCore-report.json",
+
+    "webVCore": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @webVCore --require-module @babel/register -f json:./src/report/json/webVCore-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunwebVCore.txt",
+    "webVCore-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunwebVCore.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/webVCore-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunwebVCore-1.txt",
+
+    "documentAndPersistence": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @v3Documents --require-module @babel/register -f json:./src/report/json/v3Documents-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3Documents.txt",
+    "documentAndPersistence-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunv3Documents.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/v3Documents-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3Documents-1.txt",
+
+    "documentAndPersistence_haider_ali": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @v3DocumentsHaiderAli --require-module @babel/register -f json:./src/report/json/v3DocumentsHaiderAli-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3DocumentsHaiderAli.txt",
+    "documentAndPersistence_haider_ali-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunv3DocumentsHaiderAli.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/v3DocumentsHaiderAli-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3DocumentsHaiderAli-1.txt",
+
+    "documentAndPersistence_haider_ejaz": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @v3DocumentsHaiderEjaz --require-module @babel/register -f json:./src/report/json/v3DocumentsHaiderEjaz-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3DocumentsHaiderEjaz.txt",
+    "documentAndPersistence-haider_ejaz_rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunv3DocumentsHaiderEjaz.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/v3DocumentsHaiderEjaz-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3DocumentsHaiderEjaz-1.txt",
+
+    "documentAndPersistence_safi": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @v3DocumentsSafi --require-module @babel/register -f json:./src/report/json/v3DocumentsSafi-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3DocumentsSafi.txt",
+    "documentAndPersistence-safi_rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunv3DocumentsSafi.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/v3DocumentsSafi-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3DocumentsSafi-1.txt",
+
+    "eObservations": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @eObservations --require-module @babel/register -f json:./src/report/json/eObservations-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunEObservations.txt",
+    "eObservations-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunEObservations.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/eObservations-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunEObservations-1.txt",
+
+    "clinicalNoting": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @clinicalNoting --require-module @babel/register -f json:./src/report/json/clinicalNoting-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunClinicalNoting.txt",
+    "clinicalNoting-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunClinicalNoting.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/clinicalNoting-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunClinicalNoting-1.txt",
+
+    "comorbidities": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @comorbidities --require-module @babel/register -f json:./src/report/json/comorbidities-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunComorbidities.txt",
+    "comorbidities-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunComorbidities.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/comorbidities-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunComorbidities-1.txt",
+
+    "diagnosticRequesting": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @diagnosticRequest --require-module @babel/register -f json:./src/report/json/diagnosticRequest-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunDiagnosticRequest.txt",
+    "diagnosticRequesting-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunDiagnosticRequest.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/diagnosticRequest-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunDiagnosticRequest-1.txt",
+
+    "infectionPreventionControl": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @infectionPrevention --require-module @babel/register -f json:./src/report/json/infectionPrevention-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunInfectionPrevention.txt",
+    "infectionPreventionControl-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunInfectionPrevention.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/infectionPrevention-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunInfectionPrevention-1.txt",
+
+    "resultAcknowledgement": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @v3DocumentsResultAcknowledgement --require-module @babel/register -f json:./src/report/json/v3DocumentsResultAcknowledgement-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3DocumentsResultAcknowledgement.txt",
+    "resultAcknowledgement-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunv3DocumentsResultAcknowledgement.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/v3DocumentsResultAcknowledgement-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunv3DocumentsResultAcknowledgement-1.txt",
+
+    "outpatientsClinics": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @outpatientsClinics --require-module @babel/register -f json:./src/report/json/outpatientsClinics-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunOutpatientsClinics.txt",
+    "outpatientsClinics-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunOutpatientsClinics.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/outpatientsClinics-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunOutpatientsClinics-1.txt",
+
+    "thirdPartySystems": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @thirdPartySystems --require-module @babel/register -f json:./src/report/json/thirdPartySystems-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunThirdPartySystems.txt",
+    "thirdPartySystems-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunThirdPartySystems.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/thirdPartySystems-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunThirdPartySystems-1.txt",
+
+    "informationScreens": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @informationScreens --require-module @babel/register -f json:./src/report/json/informationScreens-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunInformationScreens.txt",
+    "informationScreens-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunInformationScreens.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/informationScreens-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunInformationScreens-1.txt",
+
+    "informationScreens1": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @informationScreens1 --require-module @babel/register -f json:./src/report/json/informationScreens1-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunInformationScreens1.txt",
+    "informationScreens1-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunInformationScreens1.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/informationScreens1-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunInformationScreens1-1.txt",
+
+    "informationScreens2": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @informationScreens2 --require-module @babel/register -f json:./src/report/json/informationScreens2-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunInformationScreens2.txt",
+    "informationScreens2-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunInformationScreens2.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/informationScreens2-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunInformationScreens2-1.txt",
+
+    "outpatientsModules": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @outpatientsModules --require-module @babel/register -f json:./src/report/json/outpatientsClinics-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunOutpatientsModules.txt",
+    "outpatientsModules-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunOutpatientsModules.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/outpatientsModules-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunOutpatientsModules-1.txt",
+
+    "documentUpload": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @documentUpload --require-module @babel/register -f json:./src/report/json/documentUpload-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunDocumentUpload.txt",
+    "documentUpload-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunDocumentUpload.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/documentUpload-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunDocumentUpload-1.txt",
+
+    "advisories": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @advisories --require-module @babel/register -f json:./src/report/json/advisories-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunAdvisories.txt",
+    "advisories-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunAdvisories.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/advisories-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunAdvisories-1.txt",
+
+    "bedManagement": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @bedManagement --require-module @babel/register -f json:./src/report/json/bedManagement-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunBedManagement.txt",
+    "bedManagement-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunBedManagement.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/bedManagement-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunBedManagement-1.txt",
+
+    "reasonToReside": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @reasonToReside --require-module @babel/register -f json:./src/report/json/reasonToReside-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunReasonToReside.txt",
+    "reasonToReside-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunReasonToReside.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/reasonToReside-report.json  --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunReasonToReside-1.txt",
+
+    "clinicalRecord": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @ClinicalRecord --require-module @babel/register -f json:./src/report/json/clinicalRecord-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunClinicalRecord.txt",
+    "clinicalRecord-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunClinicalRecord.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/clinicalRecord-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunClinicalRecord-1.txt",
+
+    "profileChanging": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @profileChanging --require-module @babel/register -f json:./src/report/json/profileChanging-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunProfileChanging.txt",
+    "profileChanging-rerun": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/report/rerun/@rerunProfileChanging.txt --publish-quiet --require-module @babel/register -f json:./src/report/json/profileChanging-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/@rerunProfileChanging-1.txt",
+
+
+    "e2eCount": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags \"@webVCore or @v3Documents or @eObservations or @clinicalNoting or @comorbidities or @diagnosticRequest or @infectionPrevention or @v3DocumentsResultAcknowledgement or @outpatientsClinics or @thirdPartySystems or @informationScreens1 or @informationScreens2 or @profileChanging or @documentUpload or @reasonToReside or @ClinicalRecord or @notScripted\" --require-module @babel/register -f json:./src/report/json/cucumber-report.json --publish-quiet -f @cucumber/pretty-formatter -d",
+    "e2eCountRun": "run-s -c i clear e2eCount report",
+
+
+    "smoke-parallel": "run-p -c webVCore-smoke",
+    "runner-smoke": "run-s -c i clear smoke-parallel report",
+
+    "run-parallel": "run-p -c webVCore documentAndPersistence_haider_ali documentAndPersistence_haider_ejaz documentAndPersistence_safi eObservations clinicalNoting comorbidities diagnosticRequesting infectionPreventionControl resultAcknowledgement outpatientsClinics thirdPartySystems informationScreens documentUpload reasonToReside clinicalRecord profileChanging",
+    "runner": "run-s -c i clear run-parallel report",
+
+    "rerun-parallel": "run-p -c webVCore-rerun documentAndPersistence_haider_ali-rerun documentAndPersistence-haider_ejaz_rerun documentAndPersistence-safi_rerun eObservations-rerun clinicalNoting-rerun comorbidities-rerun diagnosticRequesting-rerun  infectionPreventionControl-rerun resultAcknowledgement-rerun outpatientsClinics-rerun thirdPartySystems-rerun informationScreens1-rerun informationScreens2-rerun documentUpload-rerun reasonToReside-rerun clinicalRecord-rerun profileChanging-rerun",
+    "runner-rerun": "run-s -c i rerun-parallel report",
+
+    "i": "npm install",
+    "ifelse": "if [ 'npm run test-tag' = one ]; then printf %s\\\\n '$@'; else echo false;"
+  }
+}

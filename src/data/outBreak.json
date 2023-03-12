@@ -1,0 +1,391 @@
+{
+  "TableHeader": {
+    "Column1": "Opened",
+    "Column2": "Site",
+    "Column3": "Ward/Unit",
+    "Column4": "Status",
+    "Column5": "Primary Organism / Symptom",
+    "Column6": "Assignee",
+    "Column7": "Review",
+    "Column8": "patient",
+    "Column9": "staff"
+  },
+
+  "ValueNotDefined": {
+    "UnknownValue" : "Not Known"
+  },
+
+  "outBreakCreation": {
+    "Organisation": "Diana Princess of Wales Hospital",
+    "Organisation2": "Community Services",
+    "Organisation3": "Goole and District Hospital",
+    "Ward": "AMETHYST DAY CASE UNIT",
+    "Ward2" : "AMETHYST WARD",
+    "Assignee": "Andrea Webster-Cockrill",
+    "PrimarySymptom": "COVID Positive Contact"
+  },
+
+  "EditOutBreakCreation": {
+    "PrimarySymptom": "Chills and Sweats"
+  },
+  "DateTime": {
+    "Month": "July",
+    "Month2": "June",
+    "Date": "20",
+    "Hour": "16",
+    "Year": "2022",
+    "Year2021": "2021",
+    "Minutes": "20",
+    "Second": "8",
+    "Sec": "2"
+  },
+  "bedDaysLost" : {
+      "days": "22",
+      "text": "Test123"
+  },
+
+  "rolePermissions" : {
+    "site": "Diana Princess of Wales Hospital"
+  },
+
+  "outbreakDetails" : {
+    "status": "Open",
+    "StatusCheckClosed": "Closed",
+    "UpdatedBy": "Ali Haider",
+    "UpdatedOn" : "14-Jul-2022 12:39",
+    "OutbreakStarted" : "15-Jul-2022 00:00",
+    "Ward": "AMETHYST DAY",
+    "InitialCount": "0"
+  },
+
+  "staffCase" : {
+    "staffName": "NewTest",
+    "grade": "20",
+    "EndedOn": "Not Known",
+    "EndedOn2": "INVALID DATE",
+    "Status": "Open"
+  },
+
+  "EditCase" : {
+    "BedManagement": "Red",
+    "IsolatedWithinTimeframe": "Yes"
+  },
+
+  "CaseInformation" : {
+    "Parameter1": "Patient Involved",
+    "Parameter2": "Assignee",
+    "Parameter3": "Bed Management",
+    "Parameter4": "Organisation",
+    "Parameter5": "Date Of Isolation",
+    "Parameter6": "Isolated Within Timeframe",
+    "Parameter7": "Reason For Failure To Isolate"
+  },
+
+  "CloseCase" : {
+    "EditCaseDetails": "Discharged"
+  },
+
+  "CreateInfectionEventsFields" : {
+    "Field1": "Organism",
+    "Field2": "Specimen Site",
+    "Field3": "Specimen Type",
+    "Field4": "Care Setting",
+    "Field5": "Suspected On",
+    "Field6": "Confirmed On",
+    "Field7": "Sample Number",
+    "Field8": "Notes"
+  },
+
+  "CreateInfectionEventsValue" : {
+    "Organism": "24 Hours Incubation",
+    "Organism2": "Sars-Cov-2 (COVID-19)",
+    "SpecimenSite": "3RD TOE",
+    "SpecimenType": "24 Hour Urine",
+    "CareSetting": "Community Acquired",
+    "CareSettingOption2": "Hospital Acquired",
+    "SampleNumber": "Sam895"
+  },
+
+  "CreateInfectionEventsValue2" : {
+    "Organism": "24 Hours Incubation",
+    "Organism2": "Sars-Cov-2 (COVID-19)",
+    "SpecimenSite": "3RD TOE",
+    "SpecimenType": "24 Hour Urine",
+    "CareSetting": "Hospital Acquired",
+    "CareSettingOption2": "Community Acquired",
+    "SampleNumber": "Sam895"
+  },
+
+  "PageSubMenu" : {
+    "Header1": "Cases",
+    "Header2": "Outbreaks"
+  },
+
+  "CaseDetail" : {
+    "Column1": "Status",
+    "Column2": "Updated On",
+    "Column3": "Updated By",
+    "Column4": "Case Site",
+    "Column5": "Assignee",
+    "Column6": "Bed Management",
+    "Column7": "Involved In Outbreak",
+    "Column8": "Infection Events",
+    "Column9": "Symptoms",
+    "Column10": "Actions",
+    "Column11": "Reviews",
+    "Column12": "Historic Cases",
+    "Column13": "Documents",
+    "Column14": "Date of Admission",
+    "Column15": "Type of Admission",
+    "Column16": "Date of Discharge",
+    "Column17": "Date Of Isolation",
+    "Column18": "Reason For Failure To Isolate",
+    "Column19": "Reviewed On",
+    "Column20": "Reviewed By",
+    "Column21": "Next Review",
+    "DOB": "Born",
+    "Gender": "Gender",
+    "NHS": "NHS",
+    "CaseInfo" : "Case Information"
+  },
+
+  "ReviewParametersList" : {
+    "Parameter1": "Next Review",
+    "Parameter2": "Sample Status",
+    "Parameter3": "Comments"
+  },
+
+  "ReviewDetails" : {
+    "ParameterStatus": "Status",
+    "ParameterUpdatedOn": "Updated On",
+    "ParameterUpdatedBy": "Updated By"
+  },
+
+  "SelectSampleStatus" : {
+    "value": "Requested",
+    "ValidInValidStatus": "Valid"
+  },
+
+  "ParameterList" : {
+    "Parameter1": "Assignee",
+    "Parameter2": "Bed Management",
+    "Parameter3": "Date Range",
+    "Parameter4": "Origin Site",
+    "Parameter5": "Location",
+    "Parameter7": "Patient Identifier",
+    "Parameter8": "Status",
+    "Parameter9": "Symptom"
+  },
+
+  "CaseStatus" : {
+    "StatusOpen": "Open",
+    "StatusClosed": "Closed"
+  },
+
+  "CaseSite" : {
+    "Location": "Goole Neuro Rehab Centre",
+    "Location2": "Amethyst Ward"
+  },
+
+  "ActionDetail" : {
+    "Column1": "Status",
+    "Column2": "Updated On",
+    "Column3": "Updated By",
+    "Column4": "Description",
+    "Column5": "Completed On",
+    "Column6": "Completed By",
+    "Column7": "Completed Comments"
+  },
+
+  "ActionDetailValue" : {
+    "Status": "Status",
+    "UpdatedBy": "Updated By",
+    "Description": "Description",
+    "CompletedOn": "Not Known",
+    "CompletedBy": "Not Known",
+    "CompletedComments": "Not Known"
+  },
+
+  "ActionDetailData" : {
+    "Status": "UNRESOLVED",
+    "UpdatedBy": "Ali Haider",
+    "Description": "Description",
+    "CompletedOn": "Not Known",
+    "CompletedBy": "Not Known",
+    "CompletedComments": "Not Known"
+  },
+
+  "CaseAction" : {
+    "resolved": "Resolved",
+    "unresolved": "Unresolved"
+  },
+
+  "SymptomsList" : {
+    "Parameter1": "Sign/Symptom",
+    "Parameter2": "Date of Onset",
+    "Parameter3": "Care Setting",
+    "Parameter4": "Notes"
+  },
+
+  "SymptomsValue" : {
+    "SignSymptom": "COVID Positive Contact",
+    "CareSetting": "Community Acquired",
+    "Notes": "Notes"
+  },
+
+  "TextSample" : {
+    "TextAreaTest": "SAM895",
+    "UpdatedText": "Update"
+  },
+
+  "InfectionEventDetails" : {
+    "Status": "Unresolved",
+    "UpdatedBy": "Haider Ali",
+    "UpdatedByNew": "ALI HAIDER",
+    "ManuallyCreated": "Yes"
+  },
+
+  "InfectionEventDetail" : {
+    "Status": "Resolved",
+    "UpdatedBy": "Ali Haider",
+    "UpdatedByNew": "ALI HAIDER",
+    "ManuallyCreated": "Yes"
+  },
+
+  "CloseCaseModalPage" : {
+    "Section1": "Closure Criteria",
+    "Section2": "Comments",
+    "Comments": "CaseClosureTest"
+  },
+  "CaseDetailValue" : {
+    "Status": "Open",
+    "UpdatedBy": "Ali Haider",
+    "CreatedOn": "Not Known",
+    "CreatedBy": "Not Known",
+    "CaseSite": "Goole and District Hospital",
+    "CaseSiteDIANA": "DIANA PRINCESS OF WALES HOSPITAL",
+    "Assignee": "Kelly Greaves",
+    "BedManagement": "Red",
+    "InvolvedInOutbreak": "No",
+    "InfectionEvents": "2",
+    "Symptoms": "1",
+    "Actions": "3",
+    "Reviews": "2",
+    "HistoricCases": "0",
+    "Documents": "0",
+    "TypeOfAdmission": "Inpatient",
+    "IsolatedWithinTimeframe": "Yes"
+  },
+  "CaseDetailValue2" : {
+    "Status": "Closed",
+    "UpdatedBy": "Ali Haider",
+    "CreatedOn": "Not Known",
+    "CreatedBy": "Not Known",
+    "CaseSite": "Community Services",
+    "CaseSiteDIANA": "DIANA PRINCESS OF WALES HOSPITAL",
+    "Assignee": "Kelly Greaves",
+    "BedManagement": "red",
+    "InvolvedInOutbreak": "No",
+    "InfectionEvents": "4",
+    "Symptoms": "0",
+    "Actions": "3",
+    "Reviews": "0",
+    "HistoricCases": "0",
+    "Documents": "0",
+    "TypeOfAdmission": "Inpatient",
+    "IsolatedWithinTimeframe": "No"
+  },
+  "CreateCaseDetail" : {
+    "SectionCaseInfo": "Case Information",
+    "SectionIsolationInfo": "Isolation Information"
+  },
+
+  "PatientInformation" : {
+    "SectionActions": "Further Actions"
+  },
+
+  "ClinicalRecordDetailsValue" : {
+    "Title": "Mr",
+    "Surname": "Testname",
+    "Forename": "TestForname",
+    "Sex": "Female",
+    "Address": "B-ABC plaza wall street",
+    "Town/City": "queenland",
+    "County": "UK",
+    "Postcode": "SW1A 1AA"
+  },
+
+  "ClinicalRecordDetailHeader" : {
+    "Fieldsurname": "Surname",
+    "FieldForename": "Forename",
+    "FieldTown": "Town/City",
+    "FieldAddress": "Address",
+    "FieldCounty": "County",
+    "FieldPostcode": "Postcode"
+  },
+
+  "CreateCase" : {
+    "NHSNumber": "8888888888",
+    "Assignee": "Andrea Webster-Cockrill",
+    "Bed Management": "Amber",
+    "Organisation": "Diana Princess of Wales Hospital",
+    "ReasonForFailureToIsolate": "Clinical Decision"
+  },
+
+  "DateFilter" : {
+    "Month": "August",
+    "MonthShort": "Aug",
+    "MonthShortJuly": "Jul",
+    "Date": "10",
+    "Year": "2022",
+    "OneYearBefore": "2021"
+  },
+
+  "EditCaseBedManagement" : {
+    "BedManagementColor1": "Red",
+    "BedManagementColor2": "Amber",
+    "BedManagementColor3": "Green",
+    "BedManagementColor4": "N/A"
+  },
+
+  "HeaderCaseList" : {
+    "NameHeader": "Name",
+    "NhsHeader": "Nhs Number",
+    "WardHeader": "Ward / Unit",
+    "BedMHeader": "Bed Management",
+    "SiteHeader": "Origin Site",
+    "AssigneeHeader": "Assignee",
+    "OrganismHeader": "Organism / Symptom",
+    "StatusHeader": "Status",
+    "ReviewHeader": "Review",
+    "GenderHeader": "gender",
+    "InfectionHeader": "infections"
+  },
+
+  "CaseSearch" : {
+    "AssigneeLabel": "Assignee",
+    "BedManagementLabel": "Bed Management",
+    "DateRangeLabel": "Date Range",
+    "OriginSiteLabel": "Origin Site",
+    "LocationLabel": "Location",
+    "OrganismLabel": "Organism",
+    "PatientLabel": "Patient Identifier",
+    "StatusLabel": "Status",
+    "SymptomLabel": "Symptom"
+  },
+
+  "OutbreakFilters" : {
+    "DateRangeLabel": "Date Range",
+    "SiteLabel": "Site",
+    "UnitLabel": "Ward/Unit",
+    "StatusLabel": "Status",
+    "OrganismLabel": "Organism",
+    "AssigneeLabel": "Assignee"
+  },
+
+  "AssigneeParameter" : {
+    "Assignee": "Angela Miller"
+  }
+}
+
+

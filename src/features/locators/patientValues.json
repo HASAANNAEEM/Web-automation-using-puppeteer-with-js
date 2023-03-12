@@ -1,0 +1,10 @@
+{
+  "patientDocuments": {
+    "xpath": {
+      "canvasStore": "//canvas[contains(@class,'canvas-store')]",
+      "canvasView": "//canvas[contains(@class,'canvas-view')]",
+      "canvasBackground": "//canvas[contains(@class,'canvas-background')]",
+      "signatureImage": "//img"
+    }
+  }
+}

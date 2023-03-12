@@ -1,0 +1,6 @@
+{
+  "xpath": {
+    "DemographicBarPopUP": "(//div[contains(@class,'demographics-bar-component')])[2]",
+    "textField": "//textarea[contains(@class,'panel-input-text')]"
+  }
+}

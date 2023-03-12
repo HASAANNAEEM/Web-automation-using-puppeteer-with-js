@@ -1,0 +1,29 @@
+{
+  "credentials":{
+    "username":"ALIHAI1",
+    "password":"Monday#02",
+    "name": "Ali Haider",
+    "profileName": "Haider Ali"
+  },
+  "credentials1":{
+    "username":"JAVEASH",
+    "password":"August#02",
+    "name": "Ashar Javed",
+    "profileName": "Ashar Javed"
+  },
+  "credentials2":{
+    "username":"TEST_PROFILES",
+    "password":"Twenty2#22"
+  },
+  "credentials3":{
+    "username":"tayllew",
+    "password":"MaxVerstappen_33@"
+  },
+  "credentials4":{
+    "username":"QUSER_PERMS",
+    "password":"Monday#07",
+    "name": "Haider Ali",
+    "profileName": "Haider Ali"
+  },
+  "login_title": "Good Morning"
+}

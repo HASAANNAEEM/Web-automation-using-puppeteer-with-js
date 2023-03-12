@@ -1,0 +1,10 @@
+{
+  "xpath": {
+    "param_date": "//div[@class='container-item container-text lozenge active null'][1]",
+    "header_Name": "//span[contains(@class,'system-bar-title')]",
+    "header_Status": "//span[contains(@class,'system-bar-status')]",
+    "firstMeatball": "(//div[contains(@class,'data-set-body')]//div[contains(@class,'data-set-cell meatballs') or contains(@class,'meatballs')])[1]",
+    "lastMeatball": "(//div[contains(@class,'data-set-body')]//div[contains(@class,'data-set-cell meatballs') or contains(@class,'meatballs')])[last()]",
+    "firstRowAppointmentType": "(//div[@class='data-set-body']/div/following-sibling::div//div[10])[1]"
+  }
+}

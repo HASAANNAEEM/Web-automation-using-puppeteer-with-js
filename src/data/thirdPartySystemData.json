@@ -1,0 +1,32 @@
+{
+  "patientIdentifiers": {
+    "patient1": {
+      "nhsNumber": "4784831991",
+      "startDay": "1",
+      "startMonth": "August",
+      "startYear": "2022",
+      "startDate": "01-Aug-2022",
+      "endDay": "31",
+      "endMonth": "August",
+      "endYear": "2022",
+      "endDate": "31-Aug-2022"
+    },
+    "patient2": {
+      "nhsNumber": "3333333333"
+    },
+    "patient3": {
+      "nhsNumber": "4103897511"
+    },
+    "patient4": {
+      "nhsNumber": "9658218873",
+      "startDay": "1",
+      "startMonth": "August",
+      "startYear": "2022",
+      "startDate": "01-Aug-2022",
+      "endDay": "31",
+      "endMonth": "August",
+      "endYear": "2022",
+      "endDate": "31-Aug-2022"
+    }
+  }
+}

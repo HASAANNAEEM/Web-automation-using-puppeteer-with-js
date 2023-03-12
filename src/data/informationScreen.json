@@ -1,0 +1,142 @@
+{
+  "patientIdentifiers":{
+    "patient1": "6666666666",
+    "patient1verify": "666 666 6666",
+
+    "patient2": {
+      "demographicsBar": {
+        "headerNHS": "999 999 9603",
+        "headerDOB": "26-Oct-1970 (52y)",
+        "headerGender": "Female"
+      } ,"nhsNumber" : "9999999603"
+    },
+
+    "patient3": {
+      "patientID": "0123456789",
+
+      "demographicsBar": {
+        "headerNHS": "012 345 6789",
+        "headerGender": "Female"
+      }
+    },
+
+    "patient4": {
+      "patientName": "HENTON, Ian Mr"
+    },
+
+    "patient5": {
+      "patientName": "FRANKLIN, Alicia Mrs"
+    },
+    "patient6": {
+      "nhsNumber": "8888888888",
+      "nhsNumberVerify": "888 888 8888",
+      "data": "Zimmerman,  Charlotte Alice Born 25-Nov-2000 (21y)Gender FemaleNHS No.888 888 8888"
+    },
+    "patient7": "7777777777",
+    "patient8": "6498936762",
+
+    "PasAdmittedPatients": {
+      "patient1": "4861278309"
+    }
+  },
+
+  "futureDate": {
+    "Month": "October",
+    "Date": "25",
+    "Year": "2025",
+    "totalDate": "25-Oct-2025",
+    "Month1": "November",
+    "Date1": "25",
+    "Year1": "2022"
+  },
+
+  "flashbackDate": {
+    "Month": "August",
+    "Date": "31",
+    "Year": "2022",
+    "hours": "01",
+    "minutes": "10"
+  },
+
+  "wards": {
+    "wardECC": "ECC",
+    "wardc1k": "Ward C1K",
+    "ward28": "Ward 28"
+  },
+
+  "accountablePersonnelData": {
+
+    "accountablePersonnel1": {
+      "accountablePersonnelName1": "Abdelgabar, Abdel N M",
+      "accountablePersonnelName2": "Dr Abdelgabar, Abdel N M"
+    },
+
+    "accountablePersonnel2": {
+      "accountablePersonnelName1": "Shenton",
+      "accountablePersonnelName2": "Justin Shenton"
+    }
+
+  },
+
+  "wardLocationList": {
+
+    "wardLocation1": {
+      "wardName": "ECC",
+      "site": "Diana Princess of Wales Hospital"
+    },
+
+    "wardLocation2": {
+      "wardName": "Ward 28",
+      "site": "Scunthorpe General Hospital"
+    }
+
+  },
+
+
+  "indicatorList": {
+
+      "indicatorsName": "Covid-19",
+      "iconSetName":"accommodation-chair-default",
+      "noValue": "accommodation-chair-amber",
+      "positive": "accommodation-chair-amber",
+      "negative": "accommodation-chair-amber",
+      "untested": "accommodation-chair-amber"
+
+  },
+
+  "newIndicatorList": {
+
+    "clinicalPersonnelName": "Testing 1234",
+    "createProperty": "Testing 121",
+    "name": "testing Name 121",
+    "description": "testing Description 121",
+    "indicatorsName": "Testing 1234",
+    "edit": "Edited "
+  },
+
+  "selectSpecialtyColour": {
+
+    "color1": "Alizarin",
+    "color2": "Pumpkin",
+    "color3": "Carrot",
+    "color4": "Orange",
+    "color5": "Sunflower",
+    "color6": "Kiwi",
+    "color7": "Emerald",
+    "color8": "Turquoise",
+    "color9": "River",
+    "color10": "Belize",
+    "color11": "Amethyst",
+    "color12": "Deep Wisteria",
+    "color13": "Midnight",
+    "color14": "Coffee Liqueur",
+    "color15": "Nougat",
+    "color16": "Quarry",
+    "color17": "Cedar",
+    "color18": "Bamboo",
+    "color19": "Burnt Sienna",
+    "color20": "Raspberry Wine",
+    "speciality": "Acute Internal Medicine"
+
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "xpath": {
+    "username_input": "//input[contains(@placeholder,'Username')]",
+    "password_input": "//input[contains(@type,'password')]",
+    "sing_in_input": "//input[contains(@value,'Sign In')]",
+    "sing_out_div": "//div[contains(@title,'Sign Out')]",
+    "welcome_title": "//div[contains(@class,'login-welcome-title')]"
+  }
+}

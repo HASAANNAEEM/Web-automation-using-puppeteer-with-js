@@ -1,0 +1,34 @@
+{
+  "informationScreen": {
+    "ward": {
+      "status": "//div[contains(@id,'appended-elements')]//div[translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')='STATUS']//following-sibling::div",
+      "nhsNumber": "//div[contains(@id,'appended-elements')]//div[@class='patient-identifier']/span[2]",
+      "filterItem": "//div[contains(@class,'breadcrumb-parameters')]//div[contains(@class,'breadcrumb-item')]"
+    }
+  },
+  "requests": {
+    "xpath": {
+      "statusValuesTable": "//div[contains(@class,'data-set-body')]//div[contains(@class,'data-set-row')]//div[6]"
+    }
+  },
+  "results": {
+  "xpath": {
+    "activeLozenge": "//div[contains(@class,'data-set-body')]//div[contains(@class,'data-set-row')]//div[6]",
+    "patientReportRows": "//div[@class='event-item']/div/following-sibling::div",
+    "firstPatientReport": "(//div[@class='event-item']/div/following-sibling::div//div[2]//div[contains(@class,'container-text')][1])[1]",
+    "patientReportName": "//div[@class='event-item']/div/following-sibling::div//div[2]//div[contains(@class,'container-text')][1]",
+    "patientReportTime": "//div[@class='event-item']/div/following-sibling::div//div[1]//div[contains(@class,'container-text')][1]",
+    "patientAcknowledgedReportRows": "//div[@class='event-item']//div[contains(@class,'event-acknowledged')]",
+    "eventReportAcknowledgedBy": "//div[@class='property' and text()='Acknowledged By']/following-sibling::div[@class='value']",
+    "eventReportAcknowledgedTime": "//div[@class='property' and text()='Acknowledged On']/following-sibling::div[@class='value']",
+    "popUpSubHeader": "//div[@id='appended-elements']//div[@class='sub-header-text']",
+    "firstDisciple": "(//div[text()='Reports Acknowledgement']/../..//following-sibling::div//div[contains(@class,'full')])[1]",
+    "firstDiscipleTime": "(//div[text()='Reports Acknowledgement']/../..//following-sibling::div//div[contains(@class,'description')])[1]",
+    "procedureDiscipleName": "(//div[text()='Procedure']/following-sibling::div)[last()]|(//span[text()='Procedure']/../following-sibling::div)[last()]",
+    "procedureDiscipleNameTime": "(//div[text()='Received Date']/following-sibling::div)[last()]|(//span[text()='Received Date']/../following-sibling::div)[last()]",
+    "eventListSelectedEventName": "//div[contains(@class,'active')]//div[2]",
+    "eventListSelectedEventDateTime": "//div[contains(@class,'active')]//div[1]"
+
+  }
+}
+}

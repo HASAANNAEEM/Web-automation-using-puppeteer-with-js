@@ -1,0 +1,138 @@
+{
+    "utility": {
+        "xpath": {
+            "textUpperCase": "translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"
+        }
+    },
+    "announcementPage":{
+        "xpath":{
+            "plusIcon": "//div[contains(@class,'navigation-plus')]",
+            "ParameterStatus": "//div[contains(@class,'component-container')]//div[contains(@class,'container-item container-text lozenge active')][3]",
+            "ParameterFilter": "//div[contains(@class,'component-container')]//div[contains(@class,'navigation-arrow-right')]",
+            "popUpPlusIcon": "//div[contains(@id,'appended-elements')]//div[contains(@class,'navigation-plus')]",
+            "popUpHeader": "(//div[contains(@id,'appended-elements')]//div[contains(@class,'header-title')])[last()]",
+            "popUpTextArea": "//div[contains(@id,'appended-elements')]//textarea|//input[contains(@class,'inline-text-input')]|//textarea",
+            "popUpValueArea": "(//*[@class='container-item container-complication inline']//input)[2]|//*[@class='panel-input-text']",
+            "popUpQlEditore": "//div[contains(@id,'appended-elements')]//div[contains(@class,'ql-editor')]",
+            "tickIcon": "//div[contains(@class,'navigation-check')]",
+            "backIcon": "//div[contains(@class,'navigation-back')]",
+            "popUpbackIcon": "//div[contains(@id,'appended-elements')]//div[contains(@class,'navigation-back')]",
+            "crossIcon": "//div[contains(@class,'navigation-cancel')]",
+            "actionIcon": "//div[contains(@class,'navigation-menu-hamburger')]",
+            "popUpActionIcon": "//div[contains(@id,'appended-elements')]//div[contains(@class,'navigation-menu-hamburger')]",
+            "popUpTextDiv": "//div[contains(@id,'appended-elements')]//div[contains(@class,'ql-editor')]",
+            "popUpLinkTag": "//div[contains(@id,'appended-elements')]//button[contains(@class,'ql-link')]",
+            "popUpSaveDiv": "//div[contains(@id,'appended-elements')]//a[contains(@class,'ql-action')]",
+            "popUpDateTime": "//div[contains(@id,'appended-elements')]//div[contains(@class,'navigation-text select-current-date-time')]",
+            "popUpVerifyEditor": "//div[contains(@id,'appended-elements')]//div[contains(@class,'ql-editor')]",
+            "verifyPopUp": "//div[contains(@id,'appended-elements')]//div[contains(@class,'overlay-panel')]",
+            "verifyForm": "//div[contains(@id,'appended-elements')]//div[contains(@class,'information-title-text')]",
+            "verifyStatus": "//div[contains(@class,'information-title-text')]",
+            "verifyFormDescription": "//div[contains(@id,'appended-elements')]//div[contains(@class,'information-description-text')]",
+            "announcementLists": "//div[contains(@class,'table-header-cell')]|//div[contains(@class,'data-set-header')]//div[contains(@class,'data-set-cell')]",
+            "firstHeaderList": "//div[contains(@class,'data-set-body')]//div//div[1]",
+            "firstAnnouncement": "//div[contains(@class,'data-set-body')]/div[1]",
+            "firstEllipse": "//div[contains(@class,'data-set-body')]/div[1]/div[contains(@class,'meatballs')]|//div[contains(@class,'table-body')]/div[1]//div[contains(@class,'meatballs-clickable')]",
+            "popUpStartDate": "//div[contains(text(),'Starts')]/ancestor::div[contains(@class,'container-column')]/following-sibling::div/div[contains(@class,'container-text')]",
+            "popUpEndDate": "//div[contains(text(),'Ends')]/ancestor::div[contains(@class,'container-column')]/following-sibling::div/div[contains(@class,'container-text')]",
+            "announcementHeader": "//div[contains(@class,'header-title')]",
+            "announcementEventLabel": "//div[contains(@class,'event-label')]/span",
+            "announcementTitle": "//div[contains(@class,'event-name')]",
+            "announcementDescription": "//div[contains(@class,'description')]",
+            "announcementCreatorName": "//div[contains(@class,'creator-name')]",
+            "announcementStartDate": "//div[contains(@class,'start-date')]",
+            "announcementMessage": "//div[contains(@class,'inner-content')]/p",
+            "announcementMessageLink": "//div[contains(@class,'inner-content')]//a",
+            "startDateAnnouncementPreview": "//div[contains(@class,'start-date')]",
+            "tableHeaders": "//div[contains(@class,'data-set-header')]//div[contains(@class,'cell')]|//div[contains(@class,'table-header')]//div[contains(@class,'cell')]"
+        }
+    },
+    "roleSettingsPage": {
+        "xpath": {
+            "permissions": "//div[contains(@class,'left-click')]|//div[contains(@class,'selection-square')]",
+            "rolesListsName": "//div[contains(@class,'data-set-body')]/div/div[1]"
+        }
+    },
+    "accountSettingsPage": {
+        "xpath": {
+            "searchIcon": "//div[contains(@id,'navigation-search')]|//div[contains(@class,'navigation-search')]",
+            "filterSearch": "//input[contains(@class,'filter-input')]"
+        }
+    },
+    "organisationSettingsPage": {
+        "xpath": {
+            "tableRows": "//div[contains(@class,'data-set-body')]/div|//div[contains(@class,'table-body')]|//div[contains(@class,'data-set-body')]/div|//div[contains(@class,'table-body')]//div[contains(@class,'table-row')]|//div[@class='os-padding']//div[@class='os-content']",
+            "allClinicians": "//div[contains(@id,'appended-elements')]//div[contains(@class,'selection-delete')]",
+            "TableRowActive": "//div[contains(@class,'data-set-row --clickable ')]//div[text()='Open']",
+            "tableRowsPopup": "//div[contains(@id,'appended-elements')]//div[contains(@class,'demographics-bar-component-container property-clickable')]|//div[contains(@id,'appended-elements')]//div[contains(@class,'component-container --clickable')]",
+            "tableRowsPopupDetail": "//div[contains(@id,'appended-elements')]//div[contains(@class,'demographics-bar-component-container property-clickable')]",
+            "tableRowVerify": "//div[contains(@id,'appended-elements')]//div[contains(@class,'component-container --clickable')]",
+            "InfectionRows": "//div[contains(@id,'appended-elements')]//div[contains(@class,'component-container --clickable')]"
+        }
+    },
+    "documentSettings": {
+        "xpath": {
+            "imageUpload": "//input[@type='file']",
+            "statusXpath": "//div[text()='Status']/following-sibling::div[contains(@class,'no-entry-value')]",
+            "allSections": "//div[contains(@class,'configurator-section published')]",
+            "actionSectionXpath": "(//div[contains(@class,'configurator-section published')]//div[contains(@class,'selection-option-meatballs')])[1]",
+            "propTST680_NameAction": "(//span[contains(text(),'Prop_TST-680')]/../following-sibling::div[contains(@class,'meatballs')])[1]",
+            "propTST672_NameAction": "(//span[contains(text(),'Prop_TST-672')]/../following-sibling::div[contains(@class,'meatballs')])[1]",
+            "propTST808_NameAction": "(//span[contains(text(),'Prop_TST-808')]/../following-sibling::div[contains(@class,'meatballs')])[1]",
+            "propTST792_NameAction": "(//span[contains(text(),'Prop_TST-792_Name_1')]/../following-sibling::div[contains(@class,'meatballs')])[1]",
+            "linkedDocumentList": "//div[@id='appended-elements']//div[@class='main-text']",
+            "imageShown": "//div[@id='appended-elements']//img",
+            "persistenceXpath": "//div[text()='Persistence']/following-sibling::div[contains(@class,'no-entry-value')]",
+            "linkedDocumentsListStatuses": "//div[@id='appended-elements']//div[contains(@class,'main-text')]/../following-sibling::div/span",
+            "panelNames": "//div[contains(@class,'header-title')]",
+            "patientDemographics": "//div[contains(@class,'demographics-bar-component')]",
+            "popUpPatientDemographics": "//div[@id='appended-elements']//div[contains(@class,'demographics-bar-component')]",
+            "qlEditorTable": "//div[contains(@id,'appended-elements')]//span[contains(@class,'ql-table')]",
+            "allignControl": "//div[contains(@id,'appended-elements')]//span[contains(@class,'ql-align')]",
+            "allignLeft": "//div[contains(@id,'appended-elements')]//span[contains(@class,'ql-align')]//span[2]/span[1]",
+            "textColorRed": "//div[contains(@id,'appended-elements')]//span[contains(@class,'ql-color')][1]//span//span[contains(@data-value,'#cc0000')]",
+            "textColorOption": "//div[contains(@id,'appended-elements')]//span[contains(@class,'ql-color')][1]/span[1]",
+            "BackGroundOrange": "//div[contains(@id,'appended-elements')]//span[contains(@class,'ql-background')]//span[contains(@data-value,'#e28c05')]",
+            "BackGroundOption": "//div[contains(@id,'appended-elements')]//span[contains(@class,'ql-background')]",
+            "testSizeOption": "//div[contains(@id,'appended-elements')]//span[contains(@class,'ql-formats')]//span[contains(@class,'ql-size')]",
+            "newColumn": "//div[contains(@class,'ql-editor')]//table//tr//td[2]",
+            "textWarning": "//div[@id='appended-elements']//div[@class='information-text warning']",
+            "documentsXpathPatientSummary": "//div[text()='Outstanding Documents']/..//following-sibling::div//div[2]//div/div[1]",
+            "singleDocumentStatus": "(//div[contains(@class,'container-item container-text standard')])[2]",
+            "emailsText": "//div[@id='appended-elements']//div[@class='main-text']",
+            "startInterface": "//div[@id='appended-elements']//div[text()='Start Interface']",
+            "yesButton": "//div[@id='appended-elements']//div[text()='Yes']",
+            "stopInterface": "//div[@id='appended-elements']//div[text()='Stop Interface']",
+            "firstEmailCrossIcon": "(//div[@id='appended-elements']//div[@class='main-text']/../following-sibling::span)[1]",
+            "popupStatusXpath": "//div[contains(@class,'label')][translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')='STATUS']//following-sibling::div"
+        }
+    },
+    "assessmentPage": {
+        "footer": "//div[@id='main-footer']",
+        "sessionTimeRemaining": "//div[@id='main-footer']//div[@id='footer-right']"
+    },
+    "patientRequest": {
+        "xpath": {
+            "headers": "//div[contains(@class,'data-set-header')]//div//div",
+            "latestMeatballs": "(//div[contains(@class,'row-select-meatballs')])[1]"
+        }
+    },
+    "requestAdministration": {
+        "xpath": {
+            "receptacleColor": "//div[text()='Investigation Information' or text()='Receptacle Details']/../following-sibling::div//span",
+            "receptacleColorText": "//div[text()='Investigation Information' or text()='Receptacle Details']/../following-sibling::div//span/following-sibling::div",
+            "receptacleColorNumber": "//div[text()='Investigation Information' or text()='Receptacle Details']/../following-sibling::div//div[2]/div",
+            "filterXpath": "//div[@id='appended-elements']//input"
+        }
+    },
+    "Outbreak": {
+        "xpath": {
+            "NHSNumber": "//div[contains(@id,'appended-elements')]//div[contains(text(),'NHS Number')]/../..//input",
+            "FilterParameterDate": "//div[contains(@class,'component-container')]//div[contains(@class,'navigation-arrow-right')]/..//div[contains(text(),'2022')]"
+        }
+    },
+    "informationScreen": {
+        "tableRows": "//div[@class='table-body']//div[contains(@class,'table-row')]",
+        "specilties": "//div[@id='appended-elements']//div[contains(@class,'selection-option')]"
+    }
+}

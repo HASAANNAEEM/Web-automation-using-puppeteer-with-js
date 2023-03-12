@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "xpath": {
+
+    }
+  },
+  "packages": {
+    "xpath": {
+      "docSearchResults" : "//div[text()='Results']/ancestor::div[@class='segment']/following-sibling::div[@class='segment']"
+    }
+  }
+
+}

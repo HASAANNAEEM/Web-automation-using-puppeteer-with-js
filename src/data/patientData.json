@@ -1,0 +1,43 @@
+{
+  "patient1":{
+    "displayName":"smith",
+    "nhs":"5555555555",
+    "nationalCode":"1234",
+    "postCode": "5678",
+    "wardNHS": "9999999603",
+    "slotNHS": "9999999492",
+    "genderNHS": "9999999999"
+  },
+  "credentials1":{
+    "displayName":"john",
+    "nhs":"1111111111"
+  },
+  "patientDocument": {
+    "Code":"testSafi",
+    "Name": "test"
+  },
+  "ImageData": {
+    "Name": "back"
+  },
+  "packageCreation": {
+    "Code": "test",
+    "Name": "test",
+    "Origin": "Documents"
+  },
+  "VitalsValues": {
+    "Respiration": "23"
+  },
+  "LocalIndicator": {
+    "Name": "EccInd"
+  },
+  "PatientHistory": {
+    "ClinicianName": "Abourawi, F",
+    "Job": "Responsible Clinician",
+    "Status": "Added"
+  },
+  "wardPat":{
+    "displayName":"test",
+    "nhs":"5432162345",
+    "nhs1": "0987612345"
+  }
+}

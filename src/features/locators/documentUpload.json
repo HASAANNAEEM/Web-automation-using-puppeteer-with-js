@@ -1,0 +1,10 @@
+{
+  "xpath": {
+    "newCategoryTextField": "//input[contains(@autocomplete,'true')]",
+    "actionMenu": "//div[contains(@class,'navigation-menu-hamburger menu-bar-container-icon')]",
+    "crossInPopUp": "//div[contains(@class,'navigation-cancel menu-bar-container-icon')]",
+    "code": "(//input[contains(@autocomplete,'true')])[1]",
+    "description": "(//input[contains(@autocomplete,'true')])[2]",
+    "tick": "(//div[contains(@data-testid,'on-continue')])[3]"
+  }
+}
